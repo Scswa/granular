@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+body {
+  font-family: "Lato", sans-serif;
+  /* difference betweeen font family and font. font family gives a back up font incase google fonts goes down */
+  font-size: 14px;
+  /* font size to 14px */
+  line-height: 1.6;
+  /* line height to 1.6 */
+  color: #333333;
+  /* text color to grey */
+  text-align: center;
+  /* align center */
+}
+
+.scroll-effect {
+  height: 100vh;
+  /* Set the height of the header (element) to 100% of the viewport height (vh) */
+  background-repeat: no-repeat;
+  /* Stop the background from repeating/tilling */
+  background-size: cover;
+  /* Streth the background to cover the element */
+  background-position: center;
+  /* show the center bottom part of the image */
+  background-attachment: fixed;
+  /* Scroll content over background */
+  position: relative
+    /* We want to position our h3's at the bottom of our sections. Position absolute only works if we select which elemts we want to position relative to... so we apply position: relative to the sections */
+}
+
+header {
+  background-image: url(../images/header.jpg);
+  /* images = location / name of file */
+}
+
+nav {
+  position: absolute;
+  /* top 50%
+  right 50%
+transform: translate(-50%, -50%);
+sets it to the centre  */
+  top: 100px;
+  right: 100px;
+}
+
+/* move the arrow to the middle of the screen, 40px from the bottom of the bottom  */
+.arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* margin: 0 0 0 -22px; */
+  /* both of these (tranform and margin move the arrow half it's width to the left. Transform is easier, margin oyu need to know the width of the image) */
+}
+
+h1 {
+  margin-bottom: 20px;
+  /* Padding is inside the box, where as the margin is outside the box */
+}
+
+nav a {
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover {
+  /* hover = the state the image/text looks when you hover over */
+  color: #eed821;
+  text-decoration: underline;
+}
+
+/* Announcement */
+.highlight {
+  background-color: #e3e8ea;
+  padding: 50px 0;
+}
+
+.feature {
+  max-width: 750px;
+  /* You can view this is brower inspect */
+  margin: 0 auto;
+  /* Gets the margins to 0 so it gets sets to the middle */
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 60px;
+}
+
+/* Filters */
+/* To use id you need to use # */
+#filter1 {
+  background-image: url(../images/one.jpg);
+}
+
+#filter2 {
+  background-image: url(../images/two.jpg);
+}
+
+#filter3 {
+  background-image: url(../images/three.jpg);
+}
+
+#filter4 {
+  background-image: url(../images/four.jpg);
+}
+
+#filter5 {
+  background-image: url(../images/five.jpg);
+}
+
+h3 {
+  color: white;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+/* Subscribe */
+.subscribe, footer {
+  background-color: #eed821;
+  padding: 50px 0;
+}
+
+.email {
+  /* This is styling up our form email text. Alternative way if multiple email fields are used: input[type="email"] */
+  width: 60%;
+  border: 2px white solid;
+  /* Add a solid white 2px border */
+  padding: 8px;
+  /* Increase space inside the email box by 8px on all sides */
+  border-radius: 5px;
+  /* Round the corners by 5px */
+  text-align: center;
+  /* Centerally align the text */
+  outline: none;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  /* Can be more specific on what you want to be transitioned  */
+}
+
+.email:focus {
+  border: 2px solid #333333
+}
+
+.button {
+  width: 60%;
+  background-color: transparent;
+  border: 2px solid #333333;
+  border-radius: 5px;
+  padding: 8px 0;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  border-color: white;
+  color: white;
+}
+
+/* Footer */
+footer {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+small {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  /* remove the underline */
+  color: #333333;
+  /* make the text grey */
+  padding: 0 10px;
+  /* apply padding to the left and right of 10px */
+}
